@@ -56,9 +56,9 @@ nav {
 }
 
 .nav-logo img {
-  height: 40px;
+  height: 56px;
   width: auto;
-  max-width: 130px;
+  max-width: 160px;
   object-fit: contain;
   background: #fff;
   border-radius: 6px;
@@ -803,6 +803,24 @@ section { padding: 88px 24px; }
 
 .form-submit:hover { background: #1d95cc; transform: translateY(-1px); }
 
+.form-check { margin-top: 4px; }
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .9rem;
+  color: var(--gris-tx);
+  cursor: pointer;
+}
+.check-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  accent-color: var(--azul);
+  cursor: pointer;
+}
+.check-label a { color: var(--azul); text-decoration: underline; }
+
 /* --- BOTÓN WHATSAPP FLOTANTE --- */
 .whatsapp-float {
   position: fixed;
@@ -934,7 +952,7 @@ footer {
   gap: 10px;
 }
 
-.footer-brand img { height: 38px; filter: brightness(0) invert(1); }
+.footer-brand img { height: 48px; width: auto; object-fit: contain; background: #fff; border-radius: 6px; padding: 3px 6px; }
 .footer-brand span { color: var(--blanco); font-weight: 700; font-size: .95rem; }
 
 .footer-legal { font-size: .82rem; }
