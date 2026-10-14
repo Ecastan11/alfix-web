@@ -1,8 +1,10 @@
 # AL-FIX — Web Corporativa
 
-Web oficial de **AL-FIX Puertas Automáticas y Carpintería**, construida con HTML/CSS/JS puro y publicada en GitHub Pages.
+Web oficial de **AL-FIX Puertas Automáticas y Carpintería**: instalación, reparación y mantenimiento de puertas automáticas de garaje, motorización y carpintería metálica, para particulares y comunidades.
 
-🌐 **Web en vivo:** [elenacastan-maker.github.io/alfix-web](https://elenacastan-maker.github.io/alfix-web)
+Hecha con HTML, CSS y JavaScript puro (sin frameworks ni dependencias) y publicada gratis con GitHub Pages.
+
+🌐 **Web en vivo:** [ecastan11.github.io/alfix-web](https://ecastan11.github.io/alfix-web/)
 
 ---
 
@@ -16,9 +18,10 @@ alfix-web/
 │   ├── css/
 │   │   └── styles.css          # Estilos globales (paleta, layout, responsive)
 │   ├── js/
-│   │   └── main.js             # Menú mobile, formulario, banner cookies
+│   │   └── main.js             # Menú móvil, formulario, banner de cookies
 │   └── img/
 │       ├── logo.png            # Logo AL-FIX
+│       ├── favicon.png         # Icono de la pestaña del navegador
 │       ├── trabajo-1.jpg       # Portfolio: puerta seccional marrón
 │       └── trabajo-2.jpg       # Portfolio: puerta seccional antracita
 └── README.md
@@ -26,14 +29,14 @@ alfix-web/
 
 ---
 
-## Secciones
+## Secciones de la web
 
-| Sección | Descripción |
+| Sección | Qué contiene |
 |---|---|
-| **Hero** | Portada con eslogan, CTA a presupuesto y teléfono |
-| **Sobre nosotros** | Texto SEO con servicios y propuesta de valor |
-| **Servicios** | 4 tarjetas: puertas automáticas, automatización, carpintería metálica, mantenimiento |
-| **Portfolio** | 2 fotos de trabajos reales |
+| **Portada** | Eslogan, botón de presupuesto y teléfono |
+| **Sobre nosotros** | Presentación del negocio, servicios y propuesta de valor |
+| **Servicios** | 4 tarjetas: puertas automáticas, automatización, carpintería metálica y mantenimiento |
+| **Trabajos** | Fotos de trabajos reales |
 | **Reseñas** | 4 reseñas verificadas de Google Maps |
 | **Contacto** | Datos, WhatsApp, mapa y formulario de presupuesto |
 
@@ -43,21 +46,23 @@ alfix-web/
 
 | Color | Hex | Uso |
 |---|---|---|
-| Azul AL-FIX | `#29ABE2` | Acentos, CTAs, links |
-| Marino | `#3D4A5C` | Textos, fondos, hero |
+| Azul AL-FIX | `#29ABE2` | Acentos, botones, enlaces |
+| Marino | `#3D4A5C` | Textos, fondos, portada |
 | Blanco | `#FFFFFF` | Fondo principal |
+
+Tipografía: [Inter](https://fonts.google.com/specimen/Inter) (Google Fonts).
 
 ---
 
 ## Funcionalidades
 
-- Responsive mobile-first
-- Menú hamburguesa en móvil
+- Diseño adaptado a móvil primero (*responsive*)
+- Menú desplegable en móvil
 - Botón flotante de WhatsApp
-- Formulario de presupuesto con apertura automática de email
-- Banner de cookies con persistencia en `localStorage`
-- Schema.org `LocalBusiness` para SEO local
-- Meta description y OG tags optimizados
+- Formulario de presupuesto que abre el correo con el mensaje ya escrito
+- Banner de cookies que recuerda la elección del visitante
+- Datos estructurados `LocalBusiness` (Schema.org) para salir mejor en búsquedas locales
+- Descripción y vista previa optimizadas para Google y redes sociales
 
 ---
 
@@ -69,15 +74,21 @@ alfix-web/
 
 ---
 
-## Cómo añadir fotos al portfolio
+## Cómo ver la web en tu ordenador
 
-1. Guarda la foto en `assets/img/` con nombre `trabajo-N.jpg`
-2. Añade un bloque `<figure>` en la sección `#galeria` de `index.html`
-3. Haz commit y push — GitHub Pages lo publica automáticamente
+No hace falta instalar nada: abre `index.html` con doble clic en el navegador.
+
+---
+
+## Cómo añadir fotos de trabajos
+
+1. Guarda la foto en `assets/img/` con el nombre `trabajo-N.jpg` (por ejemplo, `trabajo-3.jpg`).
+2. Copia uno de los bloques `<figure>` de la sección `#galeria` en `index.html` y cambia la ruta de la imagen y su texto.
+3. Guarda los cambios y súbelos a GitHub (`git add`, `git commit`, `git push`).
 
 ---
 
 ## Publicación
 
-La web se publica automáticamente en GitHub Pages desde la rama `main`.
-Cualquier `git push` a `main` actualiza la web en 1-2 minutos.
+La web se publica automáticamente con GitHub Pages desde la rama `main`.
+Cada vez que subes cambios a `main`, la web se actualiza en 1–2 minutos.
